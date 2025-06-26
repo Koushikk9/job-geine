@@ -36,7 +36,7 @@ const FilterSidebar = ({ isOpen, onToggle }) => {
     </div>
   );
 
-  const CheckboxOption = ({ label, count }) => (
+  const CheckboxOption = ({ label, count }: { label: string; count?: string }) => (
     <label className="flex items-center">
       <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
       <span className="ml-2 text-sm text-gray-700">{label}</span>
